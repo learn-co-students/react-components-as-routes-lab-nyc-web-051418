@@ -10,7 +10,6 @@ const NavBar = () => {
         exact>Movies</NavLink>
       <NavLink to="/directors">Directors</NavLink>
       <NavLink to="/actors">Actors</NavLink>
-
     </div>
   );
 };
