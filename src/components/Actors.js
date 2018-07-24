@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { actors } from '../data';
 
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+      {actors.map(actor => {
+        return <div>
+          <hr/>
+          <p>{actor.name}</p>
+          <hr/>
+          {actor.movies.map(movie => (
+            <p>{movie}</p>
+          ))}
+        </div>
+      })}
     </div>
   );
 };
